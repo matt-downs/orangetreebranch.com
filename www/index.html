@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- The above 3 meta tags *must* come first in the head -->
     <meta name="description" content="Website coming soon!">
     <meta name="author" content="OrangeTreeBranch">
     <!--<link rel="icon" href="favicon.ico">-->
-    <title>OrangeTreeBranch</title>
+    <title>Orange Tree Branch</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi"
         crossorigin="anonymous">
@@ -20,17 +20,32 @@
 <body>
     <div class="container" id="front-cover">
         <div id="front-cover-centre">
-            <h1>otb.</h1>
-            <h2>watch this space</h2>
+            <h1>otb</h1>
+            <h2>[Orange Tree Branch]</h2>
         </div>
     </div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <div class="container fade-on-scroll">
+        <div class="outlined-box">
+            <h1>Connect with us</h1>
+            <a href="#" class="btn btn-outline-primary btn-lg">Soundcloud</a>
+        </div>
+    </div>
+    <div class="container" id="footer">
+        <p>Copyright Orange Tree Branch, 2016</p>
+        <p>Website designed and created by <a href="https://matt-downs.github.io" target="_blank">Matt</a></p>
+    </div>
+    <!-- JavaScript placed at the end of the document so the page loads faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK"
-        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+    <script>
+        // Register the containers for ScrollReveal
+        window.sr = ScrollReveal({
+            scale: 1,
+            reset: true
+        });
+        sr.reveal('.fade-on-scroll');
+    </script>
 </body>
 
 </html>
