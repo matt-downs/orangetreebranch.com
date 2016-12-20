@@ -1,0 +1,124 @@
+body {
+    color: #7A7A7A;
+    background-color: #F4FAFF;
+    background-position: center;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    /* Always show the vertical scrollbar */
+    overflow-y: scroll;
+}
+
+
+/* Styles for the full page title cover */
+
+.front-cover {
+    height: 100vh;
+    min-height: 40rem;
+    padding-bottom: 5rem;
+}
+
+.logo {
+    max-width: 12rem;
+}
+
+.otb-title {
+    font-size: 5em;
+    color: #F78A17;
+    font-family: 'Ewert', cursive;
+}
+
+
+/* Styles for the navigation bar */
+
+.navbar {
+    background-color: #7a7a7a;
+    opacity: 0.9;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-brand {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    text-decoration: underline;
+}
+
+.navbar-clear-fix {
+    margin-top: 5rem;
+}
+
+
+/*.outlined-box {
+    padding: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #F78A17;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+hr {
+    width: 50vw;
+    border-width: 5px;
+    border-color: #F78A17;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Override the default bootstrap links */
+
+a,
+a:hover {
+    color: #616161;
+    text-decoration: underline;
+}
+
+
+/* Override the default bootstrap buttons */
+
+
+/*
+.btn {
+    border-radius: 0;
+}
+
+.btn-outline-primary,
+.btn-outline-primary:hover,
+btn-outline-primary:focus {
+    color: #fff;
+    border-color: #494a63;
+    background-color: #494a63;
+    text-decoration: none;
+}
+
+.btn-outline-primary:hover {
+    text-decoration: underline;
+}*/
+
+#footer {
+    margin-bottom: 2rem;
+    font-size: 0.8em;
+}
+
+
+/* Stop the embedded Soundcloud player from spanning the entire container width */
+
+.soundcloud-feature {
+    max-width: 50rem;
+}
+
+
+/* Keep the bios thin :) */
+
+.bio {
+    max-width: 35rem;
+}
