@@ -6,53 +6,290 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 3 meta tags *must* come first in the head -->
-    <meta name="description" content="Website coming soon!">
+    <!-- Generic meta tags -->
+    <meta name="description" content="OTB is a Brisbane hip-hop collective, featuring the best young artists in the game. OTB makes music for you to wet your ears with.">
     <meta name="author" content="OrangeTreeBranch">
-    <!--<link rel="icon" href="favicon.ico">-->
+    <!-- Facebook meta tags -->
+    <!-- Twitter meta tags -->
+    <link rel="icon" type="image/png" href="/images/branch_sm.png" />
     <title>OTB</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="/css/bootstrap-flex.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Ewert|Lato" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <!-- Custom styles for this page -->
-    <style>
-        body {
-            background-image: url('images/cover.jpg');
-            background-size: cover;
-        }
-    </style>
 </head>
 
-<body>
-    <!-- Menu -->
-    <nav class="navbar navbar-light navbar-fixed-top">
+<body data-spy="scroll" data-target="#navbar" data-offset="200">
+    <!-- Navigation menu -->
+    <nav class="navbar navbar-dark navbar-fixed-top" id="navbar">
         <div class="container">
-            <ul class="nav navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/bio.html">Bio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/origins.html">Origins</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mailto:orangetreebranch@gmail.com">Contact</a>
-                </li>
-            </ul>
+            <!-- Left floating logo -->
+            <a class="navbar-brand hidden-xs-down" href="#">
+                <img src="/images/branch_sm.png" width="28" height="28" alt="">
+            </a>
+            <!-- Menu toggle button -->
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation"></button>
+            <!-- Listen now button -->
+            <div class="nav navbar-nav float-xs-right">
+                <a class="nav-link" id="listen-now" href="https://orangetreebranch.bandcamp.com" target="_blank">
+                    Listen now
+                    <i class="fa fa-music" aria-hidden="true"></i>
+                </a>
+            </div>
+            <!-- Menu content (hidden on sm devices) -->
+            <div class="collapse navbar-toggleable-xs" id="navbarResponsive">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#front-cover">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bios">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End menu content -->
         </div>
     </nav>
-    <div class="container">
-        <div class="row flex-items-xs-bottom front-cover">
-            <div class="col-md text-xs-center">
-                <img src="/images/logo.png" class="logo" alt="Orange Tree Branch logo">
-                <h1 class="otb-title fade-on-scroll">ORANGE TREE BRANCH</h1>
+    <!-- End navigation menu -->
+    <!-- Front cover -->
+    <div class="full-page-feature" id="front-cover">
+        <div id="front-cover-center">
+            <!--<img src="/images/logo.png" class="logo" alt="Orange Tree Branch logo">-->
+            <h1 class="fade-on-scroll">otb.</h1>
+            <h2>wet your ears</h2>
+        </div>
+        <!-- Social links -->
+        <ul id="social-links">
+            <a href="https://soundcloud.com/orangetreebranch" target="_blank">
+                <li>
+                    <i class="fa fa-soundcloud" aria-hidden="true"></i>
+                    <span>soundcloud</span>
+                </li>
+            </a>
+            <a href="https://orangetreebranch.bandcamp.com" target="_blank">
+                <li>
+                    <i class="fa fa-bandcamp" aria-hidden="true"></i>
+                    <span>bandcamp</span>
+                </li>
+            </a>
+            <a href="https://plus.google.com/u/0/100451930535040134074" target="_blank">
+                <li>
+                    <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+                    <span>google+</span>
+                </li>
+            </a>
+            <a href="https://www.facebook.com/OTBmusicnights" target="_blank">
+                <li>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <span>facebook</span>
+                </li>
+            </a>
+            <a href="https://www.instagram.com/OrangeTreeBranch" target="_blank">
+                <li>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span>instagram</span>
+                </li>
+            </a>
+        </ul>
+    </div>
+    <!-- End front cover -->
+    <!-- Soundcloud featured section -->
+    <div class="full-page-feature" id="spotlight-section">
+        <h1 class="section-heading fade-on-scroll">Spotlight</h1>
+        <div class="container fade-on-scroll">
+            <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/285708202&amp;color=ff6700&amp;auto_play=false&amp;hide_related=true&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        </div>
+    </div>
+    <!-- End soundcloud featured section-->
+    <!-- Bio section -->
+    <div id="bios"></div>
+    <div class="container anchor-header-offset" id="bios-section">
+        <h1 class="section-heading fade-on-scroll">Bios</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row bio fade-on-scroll">
+                    <div class="col-sm-6 text-xs-center">
+                        <img src="/images/bios/6.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-sm-6">
+                        Young Vi, 21, Brisbane based hip-hop artist. 16-inch vertical leap, 155 LBS (After lunch), benches 36 Kg, can still flip
+                        a bitch like Swayze.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row bio fade-on-scroll">
+                    <div class="col-sm-6 text-xs-center">
+                        <img src="/images/bios/7.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-sm-6">
+                        Brooks, a filthy QUT graduate, is a Brisbane based hiphop artist whose aspirations include: presidency; and eventually collaborating
+                        with Ron Jeremy and his enormous talent.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row bio fade-on-scroll">
+                    <div class="col-sm-6 text-xs-center">
+                        <img src="/images/bios/10.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-sm-6">
+                        Melrose is a Brisbane based producer and musician with an affinity for beats. His passions include the Gorillaz, smooth jazz,
+                        head-nodding, jeans that actually fit, and milkshakes.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row bio fade-on-scroll">
+                    <div class="col-sm-6 text-xs-center">
+                        <img src="/images/bios/1.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-sm-6">
+                        Born Paul Thomas Hillier, my alias is Professor Paul and I am a rapper/producer from Brisbane, Australia. Currently 19.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row bio fade-on-scroll">
+                    <div class="col-sm-6 text-xs-center">
+                        <img src="/images/bios/3.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-sm-6">
+                        DC is an up and coming artist whose hometown is Brisbane. His qualifications include a degree in Rap.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row bio fade-on-scroll">
+                    <div class="col-sm-6 text-xs-center">
+                        <img src="/images/bios/8.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-sm-6">
+                        Fayztu, is a local Brisbane hip hop artist who grew up in cairns, I just wanna grab life by the balls.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row bio fade-on-scroll">
+                    <div class="col-sm-6 text-xs-center">
+                        <img src="/images/bios/4.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-sm-6">
+                        Brooke Austen is a local musician, songwriter and performer based in Brisbane, Australia. Hobbies include spilling things
+                        on herself (frequently).
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row bio fade-on-scroll">
+                    <div class="col-sm-6 text-xs-center">
+                        <img src="/images/bios/2.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-sm-6">
+                        Daniel Martinez-Lopez, aka Dan da Runna, 20-year-old rapper and musician. Influences: Childish Gambino, Chance the Rapper,
+                        Kendrick Lamar, Andre 3000 and Bob Dylan.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row bio fade-on-scroll">
+                    <div class="col-sm-6 text-xs-center">
+                        <img src="/images/bios/5.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-sm-6">
+                        Jimmy Fast Bars aka jimmy da king aka Lord of the Flies aka Bris City's self proclaimed premiere speed rapper and general
+                        connoisseur of fine cheeses.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row bio fade-on-scroll">
+                    <div class="col-sm-6 text-xs-center">
+                        <img src="/images/bios/9.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-sm-6">
+                        Richard, the photographer and graphic designer. Very wow, much professional. Email OTB to contact.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <!-- End Bio section -->
+    <hr>
+    <!-- About section -->
+    <div id="about"></div>
+    <div class="container full-page-feature anchor-header-offset" id="about-section">
+        <h1 class="section-heading fade-on-scroll">About</h1>
+        <blockquote class="blockquote blockquote-top fade-on-scroll">
+            <p class="mb-0">OTB is a Brisbane hip-hop collective, featuring the best young artists in the game. OTB makes music for you to
+                wet your ears with.</p>
+        </blockquote>
+        <blockquote class="blockquote blockquote-reverse fade-on-scroll">
+            <p class="mb-0">Moist Monday's are free weekly hip-hop workshops facilitated by otb. Everyone is invited to come and play around
+                with beats and raps.</p>
+        </blockquote>
+    </div>
+    <!-- End about section-->
+    <hr>
+    <!-- Contact section -->
+    <div id="contact"></div>
+    <div class="container full-page-feature anchor-header-offset" id="contact-section">
+        <h1 class="section-heading fade-on-scroll">Contact</h1>
+        <div class="row">
+            <div class="col-md-6 mb-2 text-xs-center fade-on-scroll">
+                <img src="/images/bios/7.jpg" class="img-fluid rounded">
+                <h2>Brooks</h2>
+                <h3>CEO</h3>
+            </div>
+            <div class="col-md-6 mb-2 text-xs-center fade-on-scroll">
+                <img src="/images/bios/6.jpg" class="img-fluid rounded">
+                <h2>Young Vi</h2>
+                <h3>Community Manager</h3>
+            </div>
+        </div>
+        
+        <div class="text-xs-center mt-1 fade-on-scroll">
+            <a href="mailto:orangetreebranch@gmail.com" class="contact-button">
+                Email us
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>orangetreebranch@gmail.com</span>
+            </a>
+        </div>
+        <div class="text-xs-center mt-1 fade-on-scroll">
+            <a href="https://www.facebook.com/OTBmusicnights" target="_blank" class="contact-button">
+                Message us
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <span>@OTBmusicnights</span>
+            </a>
+        </div>
+    </div>
+    <!-- End contact section -->
+    <hr>
+    <!-- Footer -->
+    <div class="container text-xs-center" id="footer">
+        Copyright Orange Tree Branch, 2016.<br> Website by <a href="https://matt-downs.github.io" target="_blank">Matt</a>.
+    </div>
     <!-- JavaScript placed at the end of the document so the page loads faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
     <script>
@@ -62,6 +299,23 @@
             reset: true
         });
         sr.reveal('.fade-on-scroll');
+    </script>
+    <!-- GA -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-89409410-1', 'auto');
+        ga('send', 'pageview');
     </script>
 </body>
 

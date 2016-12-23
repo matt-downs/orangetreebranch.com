@@ -1,32 +1,8 @@
 body {
     color: #7A7A7A;
     background-color: #F4FAFF;
-    background-position: center;
     font-family: 'Lato', sans-serif;
-}
-
-html {
-    /* Always show the vertical scrollbar */
-    overflow-y: scroll;
-}
-
-
-/* Styles for the full page title cover */
-
-.front-cover {
-    height: 100vh;
-    min-height: 40rem;
-    padding-bottom: 5rem;
-}
-
-.logo {
-    max-width: 12rem;
-}
-
-.otb-title {
-    font-size: 5em;
-    color: #F78A17;
-    font-family: 'Ewert', cursive;
+    position: relative;
 }
 
 
@@ -37,88 +13,203 @@ html {
     opacity: 0.9;
 }
 
-.navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-brand {
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-nav .nav-link.active {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-.navbar-light .navbar-nav .active>.nav-link {
-    text-decoration: underline;
-}
-
-.navbar-clear-fix {
-    margin-top: 5rem;
-}
-
-
-/*.outlined-box {
-    padding: 20px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #F78A17;
-    text-align: center;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}*/
-
-hr {
-    width: 50vw;
-    border-width: 5px;
-    border-color: #F78A17;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-
-/* Override the default bootstrap links */
-
-a,
-a:hover {
-    color: #616161;
-    text-decoration: underline;
-}
-
-
-/* Override the default bootstrap buttons */
-
-
-/*
-.btn {
-    border-radius: 0;
-}
-
-.btn-outline-primary,
-.btn-outline-primary:hover,
-btn-outline-primary:focus {
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active:hover {
     color: #fff;
-    border-color: #494a63;
-    background-color: #494a63;
+    text-decoration: underline;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    text-decoration: underline;
+}
+
+.navbar .navbar-toggler {
+    background-image: url("/images/branch_sm.png");
+    border-color: #fff;
+    cursor: pointer;
+}
+
+#listen-now {
+    border-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: .25rem;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+/* Styles for the full page title cover */
+
+.full-page-feature {
+    min-height: 100vh;
+}
+
+#front-cover {
+    position: relative;
+    background-image: url("/images/cover.jpg");
+    background-size: cover;
+    background-origin: center;
+    height: 100vh;
+    min-height: 42rem;
+}
+
+#front-cover-center {
+    position: absolute;
+    margin-top: 35vh;
+    width: 100%;
+    text-align: center;
+}
+
+#front-cover-center h1 {
+    font-size: 11em;
+    color: #ff6700;
+    font-family: 'Roboto', sans-serif;
+}
+
+#front-cover-center h2 {
+    font-size: 2em;
+    margin-top: -2rem;
+}
+
+
+/* Social links */
+
+#social-links {
+    padding: 0;
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+#social-links a {
+    color: #fff;
+    text-align: center;
     text-decoration: none;
 }
 
-.btn-outline-primary:hover {
+#social-links li {
+    display: inline-block;
+    opacity: 0.5;
+    padding: 0.5rem;
+}
+
+#social-links li span {
+    display: block;
+}
+
+#social-links li:hover {
+    opacity: 1;
+    color: #ff6700;
+}
+
+#social-links li i {
+    font-size: 2em;
+}
+
+
+/* Soundcloud spotlight section */
+
+#spotlight-section {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+
+/* Bio section */
+
+.bio {
+    padding-bottom: 4rem;
+}
+
+
+/* About section */
+
+#about-section blockquote {
+    margin-top: 5rem;
+    font-size: 1.7em;
+}
+
+#about-section .blockquote-top {
+    margin-top: 1rem;
+}
+
+/* Contact section */
+
+#contact-section {
+    margin-bottom: 4rem;
+}
+
+
+/* Override the default button styles for the contact us links */
+
+.contact-button {
+    display: inline-block;
+    padding: 12px;
+    border-color: #7A7A7A;
+    border-width: .2rem;
+    border-style: solid;
+    border-radius: .75rem;
+    font-size: 1.7em;
+    text-decoration: none;
+}
+
+.contact-button span {
+    display: block;
+    margin-top: -.4rem;
+    font-size: 0.5em;
+}
+
+.contact-button:hover,
+.contact-button:active {
     text-decoration: underline;
-}*/
+}
+
+.contact-button i {
+    padding-left: 5px;
+}
+
+
+/* Footer section */
 
 #footer {
+    padding-top: 2rem;
     margin-bottom: 2rem;
     font-size: 0.8em;
 }
 
 
-/* Stop the embedded Soundcloud player from spanning the entire container width */
+/* Generic layout helper classes */
 
-.soundcloud-feature {
-    max-width: 50rem;
+a,
+a:hover,
+a:active {
+    /* Override the default bootstrap links */
+    color: #616161;
+    text-decoration: underline;
 }
 
+.section-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 4em;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
 
-/* Keep the bios thin :) */
-
-.bio {
-    max-width: 35rem;
+hr {
+    width: 50vw;
+    border-width: .25rem;
+    border-color: #ff6700;
+    margin-top: 0;
+    margin-bottom: 0;
 }
